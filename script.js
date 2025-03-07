@@ -51,13 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const isDark = body.classList.contains('dark-theme');
         const lightIcon = themeToggle.querySelector('.light-icon');
         const darkIcon = themeToggle.querySelector('.dark-icon');
-        
+        const mainLogo = document.querySelector('.main-logo');
+
         if (isDark) {
             lightIcon.style.display = 'block';
             darkIcon.style.display = 'none';
+            mainLogo.style.filter = 'invert(1)';
         } else {
             lightIcon.style.display = 'none';
             darkIcon.style.display = 'block';
+            mainLogo.style.filter = 'invert(0)';
         }
     }
 
@@ -383,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ===== Floating Navigation =====
     const floatingNav = document.querySelector('.floating-nav');
-    let lastScrollTop = 0;
+    // let lastScrollTop = 0;
     let isScrolling;
 
     // Show/hide floating nav based on scroll direction
@@ -1007,4 +1010,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Call the function to generate portfolio items
     generatePortfolioItems();
+
+    // ===== Hide Elements on Scroll =====
+    const themeSwitcher = document.querySelector('.theme-switcher');
+    const languageSwitcher = document.querySelector('.language-switcher');
+    const searchContainer = document.querySelector('.search-container');
+    const audioPlayer = document.querySelector('.audio-player');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            themeSwitcher.style.opacity = '0';
+            languageSwitcher.style.opacity = '0';
+            searchContainer.style.opacity = '0';
+            audioPlayer.style.opacity = '0';
+        } else {
+            themeSwitcher.style.opacity = '1';
+            languageSwitcher.style.opacity = '1';
+            searchContainer.style.opacity = '1';
+            audioPlayer.style.opacity = '1';
+        }
+        lastScrollTop = scrollTop;
+    });
 });

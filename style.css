@@ -39,6 +39,13 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    --cursor-size: 40px;
+    --cursor-active-size: 60px;
+    --cursor-bg: rgba(255, 255, 255, 0.3);
+    --cursor-border: 2px solid var(--primary-color);
+    --cursor-active-bg: rgba(255, 0, 200, 0.3);
+    --cursor-active-border: var(--secondary-color);
 }
 
 /* Light Theme Colors */
@@ -211,11 +218,11 @@ button {
 
 .cursor {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid var(--primary-color);
+    background: var(--cursor-bg);
+    border: var(--cursor-border);
     transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s, background 0.3s;
     pointer-events: none;
@@ -224,10 +231,10 @@ button {
 }
 
 .cursor.active {
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 0, 200, 0.3);
-    border-color: var(--secondary-color);
+    width: var(--cursor-active-size);
+    height: var(--cursor-active-size);
+    background: var(--cursor-active-bg);
+    border-color: var(--cursor-active-border);
 }
 
 .cursor.hidden {
@@ -430,10 +437,10 @@ button {
     margin-bottom: 30px;
 }
 
-.menu-logo {
+/* .menu-logo {
     height: 40px;
     width: auto;
-}
+} */
 
 .close-menu {
     font-size: 1.5rem;
@@ -593,23 +600,23 @@ button {
     background: radial-gradient(circle at center, rgba(0, 200, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
     z-index: var(--z-back);
 }
-
+/* 
 .logo-container {
     margin-bottom: 30px;
 }
 
 .main-logo {
-    height: 150px; /* Enlarged height for the logo */
+    height: 150px; 
     transition: filter var(--transition-fast);
-}
+} */
 
-.dark-theme .main-logo {
-    filter: invert(1); /* Invert colors for dark theme */
+/* .dark-theme .main-logo {
+    filter: invert(1); 
 }
 
 .light-theme .main-logo {
-    filter: invert(0); /* Normal colors for light theme */
-}
+    filter: invert(0); 
+*/
 
 .hero-title {
     font-size: 3.5rem;
