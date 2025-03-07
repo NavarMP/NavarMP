@@ -18,6 +18,5 @@ I'm a passionate designer and developer who loves creating visually appealing po
 
 ## 📫 Connect with Me
 - GitHub: [@navarmp](https://github.com/navarmp)
-- Email: (Add your email if you want)
-
+- Email: navarmp@gmail.com
 > "Design with purpose, develop with passion." ✨
