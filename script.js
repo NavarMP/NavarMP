@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function() {
             client: 'Fashion Boutique',
             date: 'January 2023',
             description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
-            images: ['assets/images/portfolio/web-project-1.jpg', 'assets/images/portfolio/web-project-1-detail.jpg']
+            images: ['assets/images/portfolio/web/web-1.jpg']
         },
         project2: {
             title: 'Mobile App UI Design',
@@ -560,7 +560,7 @@ document.addEventListener('DOMContentLoaded', function() {
             client: 'Health & Fitness Startup',
             date: 'March 2023',
             description: 'A comprehensive UI design for a health and fitness tracking mobile application. The design focuses on user experience, with intuitive navigation and visually appealing data visualization.',
-            images: ['assets/images/portfolio/app-project-1.jpg', 'assets/images/portfolio/app-project-1-detail.jpg']
+            images: ['assets/images/portfolio/app/app-1.jpg', 'assets/images/portfolio/app/app-1-detail.jpg']
         },
         project3: {
             title: 'Brand Identity',
@@ -568,7 +568,143 @@ document.addEventListener('DOMContentLoaded', function() {
             client: 'Tech Consultancy',
             date: 'May 2023',
             description: 'A complete brand identity package for a technology consultancy firm. The project included logo design, color palette selection, typography, and brand guidelines.',
-            images: ['assets/images/portfolio/logo-project-1.jpg', 'assets/images/portfolio/logo-project-1-detail.jpg']
+            images: ['assets/images/portfolio/logo/logo-1.jpg', 'assets/images/portfolio/logo/logo-1-detail.jpg']
+        },
+        project4: {
+            title: 'Web Design',
+            category: 'Web Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/web/web-2.jpg', 'assets/images/portfolio/web/web-2-detail.jpg']
+        },
+        project5: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-1.jpg']
+        },
+        project6: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-2.jpg']
+        },
+        project7: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-3.jpg']
+        },
+        project8: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-4.jpg']
+        },
+        project9: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-5.jpg']
+        },
+        project10: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-6.jpg']
+        },
+        project11: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-7.jpg']
+        },
+        project12: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-8.jpg']
+        },
+        project13: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-9.jpg']
+        },
+        project14: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-10.jpg']
+        },
+        project15: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-11.jpg']
+        },
+        project16: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-12.jpg']
+        },
+        project17: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-13.jpg']
+        },
+        project18: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-14.jpg']
+        },
+        project19: {
+            title: 'Flyer Design',
+            category: 'Flyer Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/flyer/flyer-15.jpg']
+        },
+        project20: {
+            title: 'Logo Design',
+            category: 'Logo Design',
+            client: 'Tech Consultancy',
+            date: 'May 2023',
+            description: 'A fully responsive e-commerce website for a fashion boutique. The project included custom product pages, shopping cart functionality, and a streamlined checkout process.',
+            images: ['assets/images/portfolio/logo/logo-16.jpg']
         }
     };
 
@@ -904,35 +1040,140 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 id: 'project2',
                 category: 'app',
-                image: 'assets/images/portfolio/app-project-1.jpg',
+                image: 'assets/images/portfolio/app/app-1.jpg',
                 title: 'Fitness Tracker App',
                 type: 'App Design'
             },
             {
                 id: 'project3',
                 category: 'logo',
-                image: 'assets/images/portfolio/logo-project-1.jpg',
+                image: 'assets/images/portfolio/logo/logo-1.jpg',
                 title: 'Tech Company Rebrand',
                 type: 'Logo Design'
             },
             {
                 id: 'project4',
                 category: 'web',
-                image: 'assets/images/portfolio/web-project-2.jpg',
+                image: 'assets/images/portfolio/web/web-2.jpg',
                 title: 'Portfolio Website',
                 type: 'Web Design'
             },
             {
                 id: 'project5',
                 category: 'flyer',
-                image: 'assets/images/portfolio/flyer-project-1.jpg',
+                image: 'assets/images/portfolio/flyer/flyer-1.jpg',
                 title: 'Event Promotion',
                 type: 'Flyer Design'
             },
             {
                 id: 'project6',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-2.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project7',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-3.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project8',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-4.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project9',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-5.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project10',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-6.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project11',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-7.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project12',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-8.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project5',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-9.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project13',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-10.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project14',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-11.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            // {
+            //     id: 'project15',
+            //     category: 'flyer',
+            //     image: 'assets/images/portfolio/flyer/flyer-12.jpg',
+            //     title: 'Event Promotion',
+            //     type: 'Flyer Design'
+            // },
+            {
+                id: 'project16',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-13.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project17',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-14.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            {
+                id: 'project18',
+                category: 'flyer',
+                image: 'assets/images/portfolio/flyer/flyer-15.jpg',
+                title: 'Event Promotion',
+                type: 'Flyer Design'
+            },
+            // {
+            //     id: 'project19',
+            //     category: 'flyer',
+            //     image: 'assets/images/portfolio/flyer/flyer-16.jpg',
+            //     title: 'Event Promotion',
+            //     type: 'Flyer Design'
+            // },
+            {
+                id: 'project20',
                 category: '3d',
-                image: 'assets/images/portfolio/3d-project-1.jpg',
+                image: 'assets/images/portfolio/3d/3d-1.jpg',
                 title: 'Product Visualization',
                 type: '3D Rendering'
             }
