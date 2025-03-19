@@ -29,7 +29,7 @@ I'm a passionate **Web Developer** and **Graphic Designer** based in [Your Locat
 
 ## 🔝 Top Repositories
 
-<div align="center"> <a href="https://github.com/NavarMP/repository1"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=NavarMP&repo=repository1&theme=radical" alt="Repository 1"/> </a> <a href="https://github.com/NavarMP/repository2"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=NavarMP&repo=repository2&theme=radical" alt="Repository 2"/> </a> </div>
+<div align="center"> <a href="https://github.com/NavarMP/maladh-al-haya"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=NavarMP&repo=repository1&theme=radical" alt="Repository 1"/> </a> <a href="https://github.com/NavarMP/mallumuslimclub"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=NavarMP&repo=repository2&theme=radical" alt="Repository 2"/> </a> </div>
 
 ## 👨‍💻 Recent Projects
 
