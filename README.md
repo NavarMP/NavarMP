@@ -1,5 +1,5 @@
 
-# 👋 Hi, I'm Muhammed Navar
+# 👋 Hi, I'm Muḥammed Navār
 
 <div align="center"> <img src="https://raw.githubusercontent.com/NavarMP/NavarMP/main/assets/header-banner.gif" alt="Banner" width="100%"> </div>
 
