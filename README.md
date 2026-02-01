@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="https://raw.githubusercontent.com/NavarMP/NavarMP/main/public/assets/Logo.svg" width="120" alt="Logo" />
+  <br/>
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=F75C7E&center=true&vCenter=true&width=500&lines=Hi,+I'm+Muḥammed+Navār;Full+Stack+Developer;Graphic+Designer;Creative+Technologist" alt="Typing SVG" />
 </div>
 
@@ -17,6 +19,11 @@
 ---
 
 ### 🚀 About Me
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/NavarMP/NavarMP/main/public/assets/Portrait.png" width="150" style="border-radius: 50%; border: 4px solid #F75C7E;" alt="Portrait" />
+</div>
+<br/>
 
 I'm a multidisciplinary creator sitting at the intersection of **Design** and **Technology**. With a background in Graphic Design and a passion for Full-Stack Development, I build applications that not only work perfectly but look stunning.
 
@@ -54,15 +61,15 @@ I'm a multidisciplinary creator sitting at the intersection of **Design** and **
 
 ---
 
-### � GitHub Stats
+### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=NavarMP&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NavarMP&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" height="150" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=NavarMP&show_icons=true&theme=tokyonight&hide_border=true" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NavarMP&layout=compact&theme=tokyonight&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NavarMP&theme=tokyonight&hide_border=true&background=00000000" alt="streak graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NavarMP&theme=tokyonight&hide_border=true" alt="streak graph" />
 </div>
 
 ---
