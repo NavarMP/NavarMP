@@ -1,9 +1,0 @@
-This is a placeholder file to ensure the assets/images directory is created.
-
-Please replace this with actual image files as specified in the assets-guide.html file:
-
-1. logo.png - Your personal logo (recommended size: 200x80px)
-2. profile.jpg - Your profile picture (recommended size: 600x600px)
-3. favicon.ico - Website favicon (16x16px, 32x32px, and 48x48px)
-4. Portfolio images in the portfolio/ subdirectory
-5. Testimonial client images in the testimonials/ subdirectory

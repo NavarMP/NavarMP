@@ -1,9 +1,0 @@
-This is a placeholder file to ensure the assets/images/testimonials directory is created.
-
-Please replace this with the actual testimonial client image files as specified in the assets-guide.html file:
-
-1. client1.jpg - Client 1 profile picture (recommended size: 100x100px)
-2. client2.jpg - Client 2 profile picture (recommended size: 100x100px)
-3. client3.jpg - Client 3 profile picture (recommended size: 100x100px)
-
-These images will be displayed in the Testimonials section of the website.

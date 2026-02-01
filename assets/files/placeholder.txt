@@ -1,7 +1,0 @@
-This is a placeholder file to ensure the assets/files directory is created.
-
-Please replace this with the actual file as specified in the assets-guide.html file:
-
-1. navar-mp-resume.pdf - Your resume in PDF format
-
-This file will be available for download from the Resume section of the website.

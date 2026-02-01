@@ -1,8 +1,0 @@
-This is a placeholder file to ensure the assets/screenshots directory is created.
-
-Please replace this with the actual screenshot files as specified in the assets-guide.html file:
-
-1. screenshot1.png - Website screenshot for PWA (1280x720px)
-2. screenshot2.png - Website screenshot for PWA (1280x720px)
-
-These screenshots will be used in the PWA manifest to display in app stores and during installation.
