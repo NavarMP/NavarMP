@@ -28,10 +28,10 @@ async function seed() {
         console.log("🗑️  Cleared existing data");
 
         // 1. Create Admin User
-        const hashedPassword = await bcrypt.hash("navar2019", 12);
+        const hashedPassword = await bcrypt.hash("admin123", 12);
         const admin = await User.create({
             name: "Muḥammed Navār",
-            email: "navarmp@gmail.com",
+            email: "[EMAIL_ADDRESS]",
             password: hashedPassword,
             role: "admin",
         });
@@ -205,7 +205,7 @@ This workflow has saved me countless hours and ensures design fidelity.`,
 
         console.log("\n✨ Seed data created successfully!\n");
         console.log("📋 Summary:");
-        console.log(`   - Admin: ${admin.email} / navar2019`);
+        console.log(`   - Admin: ${admin.email} / admin123`);
         console.log(`   - Projects: ${projects.length}`);
         console.log(`   - Testimonials: ${testimonials.length}`);
         console.log(`   - Blog Posts: ${posts.length} (${posts.filter(p => p.published).length} published)`);

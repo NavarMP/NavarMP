@@ -1,23 +1,33 @@
 import { Download, Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
+import connectDB from "@/lib/mongodb";
+import { Status } from "@/models/Status";
 
 export const metadata = {
     title: "Resume - Muḥammed Navār",
     description: "Professional resume of Muḥammed Navār - Graphic Designer & Full-Stack Developer",
 };
 
-export default function ResumePage() {
+async function getResumeUrl() {
+    await connectDB();
+    const status = await Status.findOne().lean();
+    return (status as any)?.resumeUrl || "/assets/NavarMP_resume.pdf";
+}
+
+export default async function ResumePage() {
+    const resumeUrl = await getResumeUrl();
+
     const education = [
         {
             degree: "Bachelor of Computer Applications (BCA)",
             institution: "University of Calicut",
-            year: "2018 - 2021",
+            year: "2023 - 2026",
             description: "Focused on software development, database management, and web technologies.",
         },
         {
             degree: "Higher Secondary Education",
-            institution: "SAFI Institute of Advanced Study",
-            year: "2016 - 2018",
-            description: "Computer Science stream with Mathematics",
+            institution: "CHMHSS Pookolathur",
+            year: "2021 - 2023",
+            description: "Computer Science",
         },
     ];
 
@@ -81,11 +91,14 @@ export default function ResumePage() {
                                 </div>
                             </div>
                         </div>
-
-                        <button className="px-8 py-4 rounded-full bg-primary text-on-primary font-bold shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all flex items-center gap-2">
+                        <a
+                            href="/assets/NavarMP_resume.pdf"
+                            download="NavarMP_Resume.pdf"
+                            className="px-8 py-4 rounded-full bg-primary text-on-primary font-bold shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all flex items-center gap-2"
+                        >
                             <Download size={20} />
                             Download PDF
-                        </button>
+                        </a>
                     </div>
 
                     {/* Social Links */}
@@ -109,7 +122,7 @@ export default function ResumePage() {
                             LinkedIn
                         </a>
                         <a
-                            href="https://navarmp.com"
+                            href="https://NavarMP.vercel.app/"
                             className="flex items-center gap-2 px-4 py-2 bg-surface rounded-xl hover:bg-primary hover:text-on-primary transition-colors"
                         >
                             <Globe size={18} />

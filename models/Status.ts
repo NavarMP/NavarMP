@@ -15,6 +15,11 @@ const StatusSchema = new Schema(
             trim: true,
             default: "Available for new projects",
         },
+        resumeUrl: {
+            type: String,
+            trim: true,
+            default: "/assets/NavarMP_resume.pdf", // Default fallback
+        },
         lastUpdated: {
             type: Date,
             default: Date.now,

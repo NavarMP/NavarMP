@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
                 protocol: "https",
                 hostname: "via.placeholder.com",
             },
+            {
+                protocol: "https",
+                hostname: "instagram.com",
+            },
+            {
+                protocol: "https",
+                hostname: "scontent.cdninstagram.com",
+            },
         ],
     },
     experimental: {

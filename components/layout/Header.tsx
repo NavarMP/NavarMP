@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
+import { Logo } from "@/components/ui/Logo";
 
 export function Header() {
     const [isVisible, setIsVisible] = useState(true);
@@ -38,13 +39,16 @@ export function Header() {
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-                    <div className="relative w-10 h-10">
+                    {/* <div className="relative w-10 h-10">
                         <Image
                             src="/assets/Logo.svg"
                             alt="Muḥammed Navār Logo"
                             fill
                             className="object-contain"
                         />
+                    </div> */}
+                    <div className="relative w-24 h-10">
+                        <Logo className="w-full text-primary" />
                     </div>
                     <span className="font-display font-bold text-xl text-on-background hidden md:block">
                         Muḥammed Navār

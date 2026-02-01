@@ -24,23 +24,7 @@ const ProjectSchema = new Schema(
         },
         subcategory: {
             type: String,
-            enum: [
-                // Graphic Design
-                "logo-design",
-                "branding",
-                "marketing-materials",
-                "social-media",
-                "illustration",
-                "print-design",
-                // Web Development
-                "web-app",
-                "e-commerce",
-                "portfolio",
-                "landing-page",
-                "full-stack",
-                "frontend",
-            ],
-            required: [true, "Subcategory is required"],
+            required: false,
         },
         client: {
             type: String,
@@ -56,7 +40,7 @@ const ProjectSchema = new Schema(
         },
         media: [
             {
-                type: String, // Cloudinary URLs or video URLs
+                type: { type: String, enum: ['image', 'video'] }, // Explicitly define inner 'type'
                 url: String,
             },
         ],

@@ -19,6 +19,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/ui/Logo";
 import { Availability } from "@/components/providers/Availability";
+import { SelectedWorks } from "@/components/home/SelectedWorks";
 
 // Ticker Component (Updated)
 function ServiceTicker() {
@@ -130,6 +131,7 @@ export default function Home() {
                             <a href="https://LinkedIn.com/in/NavarMP" className="hover:text-primary transition-colors"><SiLinkedin size={20} /></a>
                             <a href="https://Behance.net/NavarMP" className="hover:text-primary transition-colors"><SiBehance size={20} /></a>
                             <span className="h-1 w-1 rounded-full bg-current"></span>
+
                             {/* Availability Status */}
                             <Availability />
                         </div>
@@ -244,35 +246,8 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    {/* Placeholder for Project Grid - will be dynamic later */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="group rounded-3xl overflow-hidden bg-surface border border-outline/10 hover:shadow-2xl transition-all duration-300">
-                            <div className="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                                <span className="text-white opacity-50">Project Preview</span>
-                            </div>
-                            <div className="p-8">
-                                <h3 className="text-2xl font-bold mb-2">Portfolio 2024</h3>
-                                <p className="text-on-surface-variant mb-4">You're looking at it. Built with Next.js & Tailwind.</p>
-                                <div className="flex gap-2">
-                                    <span className="px-3 py-1 bg-surface-variant rounded-full text-xs">Next.js</span>
-                                    <span className="px-3 py-1 bg-surface-variant rounded-full text-xs">React</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="group rounded-3xl overflow-hidden bg-surface border border-outline/10 hover:shadow-2xl transition-all duration-300">
-                            <div className="h-64 bg-gradient-to-br from-primary/80 to-secondary/80 flex items-center justify-center">
-                                <span className="text-white opacity-50">Brand Identity</span>
-                            </div>
-                            <div className="p-8">
-                                <h3 className="text-2xl font-bold mb-2">EcoTech Branding</h3>
-                                <p className="text-on-surface-variant mb-4">Complete visual identity for a sustainable tech startup.</p>
-                                <div className="flex gap-2">
-                                    <span className="px-3 py-1 bg-surface-variant rounded-full text-xs">Illustrator</span>
-                                    <span className="px-3 py-1 bg-surface-variant rounded-full text-xs">Branding</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* Dynamic Project Grid */}
+                    <SelectedWorks />
                 </section>
 
                 {/* Contact CTA */}

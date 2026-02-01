@@ -2,9 +2,10 @@ import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Plus, Pencil, Trash2 } from "lucide-react";
+import { ArrowLeft, Plus, Pencil } from "lucide-react";
 import connectDB from "@/lib/mongodb";
 import { Project } from "@/models/Project";
+import DeleteButton from "@/components/admin/DeleteButton";
 
 export default async function AdminProjectsPage() {
     const session = await auth();
@@ -86,9 +87,11 @@ export default async function AdminProjectsPage() {
                                     <Pencil size={20} />
                                 </Link>
                                 {/* Delete button usually needs a client component or server action handling */}
-                                <button className="p-3 rounded-xl bg-surface-variant/30 text-red-500 hover:bg-red-500 hover:text-white transition-colors">
-                                    <Trash2 size={20} />
-                                </button>
+                                <DeleteButton
+                                    id={project._id.toString()}
+                                    endpoint="/api/projects"
+                                    confirmMessage={`Are you sure you want to delete "${project.title}"?`}
+                                />
                             </div>
                         </div>
                     ))}

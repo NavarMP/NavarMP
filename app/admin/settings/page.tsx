@@ -13,6 +13,8 @@ export default function AdminSettingsPage() {
     const [availableForFreelance, setAvailableForFreelance] = useState(true);
     const [openForHire, setOpenForHire] = useState(true);
     const [statusMessage, setStatusMessage] = useState("");
+    const [resumeUrl, setResumeUrl] = useState("");
+    const [uploading, setUploading] = useState(false);
 
     useEffect(() => {
         async function fetchStatus() {
@@ -22,6 +24,7 @@ export default function AdminSettingsPage() {
                 setAvailableForFreelance(data.availableForFreelance);
                 setOpenForHire(data.openForHire);
                 setStatusMessage(data.statusMessage || "");
+                setResumeUrl(data.resumeUrl || "");
             } catch (error) {
                 console.error("Failed to fetch status:", error);
             } finally {
@@ -30,6 +33,34 @@ export default function AdminSettingsPage() {
         }
         fetchStatus();
     }, []);
+
+    const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setUploading(true);
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("folder", "navarmp-resume");
+
+        try {
+            const res = await fetch("/api/upload", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                setResumeUrl(data.url);
+            } else {
+                console.error("Upload failed");
+            }
+        } catch (error) {
+            console.error("Error uploading file:", error);
+        } finally {
+            setUploading(false);
+        }
+    };
 
     const handleSave = async () => {
         setSaving(true);
@@ -43,6 +74,7 @@ export default function AdminSettingsPage() {
                     availableForFreelance,
                     openForHire,
                     statusMessage,
+                    resumeUrl,
                 }),
             });
 
@@ -130,6 +162,45 @@ export default function AdminSettingsPage() {
                             className="w-full px-4 py-3 rounded-xl bg-surface-variant/30 border border-outline/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-on-surface resize-none"
                             placeholder="e.g., Available for new projects, Currently booked until March..."
                         />
+                    </div>
+
+                    {/* Resume Upload */}
+                    <div className="p-8 bg-surface rounded-3xl border border-outline/10">
+                        <h2 className="text-2xl font-bold font-display mb-6">Resume / CV</h2>
+                        <div className="space-y-4">
+                            <div>
+                                <label className="block text-sm font-medium mb-2 text-on-surface">Upload New PDF</label>
+                                <div className="flex items-center gap-4">
+                                    <input
+                                        type="file"
+                                        accept=".pdf"
+                                        onChange={handleFileUpload}
+                                        disabled={uploading}
+                                        className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 text-sm text-on-surface-variant cursor-pointer"
+                                    />
+                                    {uploading && <Loader2 className="animate-spin text-primary" size={20} />}
+                                </div>
+                            </div>
+
+                            {resumeUrl && (
+                                <div className="p-4 bg-surface-variant/20 rounded-xl flex items-center justify-between">
+                                    <div className="truncate flex-1 mr-4">
+                                        <p className="text-sm font-medium text-on-surface">Current Resume Link</p>
+                                        <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-primary hover:underline truncate block">
+                                            {resumeUrl}
+                                        </a>
+                                    </div>
+                                    <a
+                                        href={resumeUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="px-3 py-1.5 bg-surface text-xs font-medium rounded-lg border border-outline/20 hover:bg-surface-variant/50 transition-colors"
+                                    >
+                                        View
+                                    </a>
+                                </div>
+                            )}
+                        </div>
                     </div>
 
                     {/* Save Button */}
