@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/NavarMP/NavarMP/main/public/assets/Logo.svg" width="120" alt="Logo" />
-  <br/>
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=F75C7E&center=true&vCenter=true&width=500&lines=Hi,+I'm+Muḥammed+Navār;Full+Stack+Developer;Graphic+Designer;Creative+Technologist" alt="Typing SVG" />
 </div>
 
